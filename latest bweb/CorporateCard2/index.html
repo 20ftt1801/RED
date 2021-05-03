@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Workshop Registration</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+        <link href="assets/bootstrap/css/style.css" rel="stylesheet" type="text/css" />
+    </head>
+
+    <body>
+      <ul class="navigation">
+    <li><a href="#">Home</a></li>
+    </ul>
+      <img class="Workshopimage" src="Workshop.png" alt="">
+
+<div class="container-fluid">
+    <section class="container">
+		<div class="container-page">
+            <div class="col-md-12">
+                <div class="col-md-2"></div>
+                <div class="col-md-8">
+			<div class="col-md-6"  id="box-modified">
+				<h3 class="dark-grey">Workshop Registration Form</h3>
+
+				<form id="registration_form" action="" method="post">
+				<div class="form-group col-lg-12">
+
+					<input type="text" name="username" class="form-control" id="username" value="" placeholder="Username">
+                    <span id="username_error_message"></span>
+				</div>
+
+                <div class="form-group col-lg-12">
+
+					<input type="email" name="useremail" class="form-control" id="useremail" value="" placeholder="Email">
+                    <span id="email_error_message"></span>
+				</div>
+
+                <div class="form-group col-lg-12">
+
+					<input type="text" name="userfirstname" class="form-control" id="userfirstname" value="" placeholder="Date">
+                    <span id="firstname_error_message"></span>
+				</div>
+
+                <div class="form-group col-lg-12">
+
+					<input type="text" name="userlastname" class="form-control" id="userlastname" value="" placeholder="Phone Number">
+                    <span id="lastname_error_message"></span>
+				</div>
+
+
+
+				<div class="form-group col-sm-12">
+					<input type="checkbox" style="margin-top:4%;margin-right:2%" id="newsletter" name="checkbox" value="newsletter" />T&C apply
+				</div>
+                <div class="form-group col-sm-12">
+					<div class="g-recaptcha" data-sitekey="6LeG-gkUAAAAAGWpWYEy9A8oDqAjnEgRv_n9qxhK"></div>
+				</div>
+            <input type="submit" class="btn btn-primary" value="Register" name="register" style="margin-left: 36%;margin-bottom: 4%;">
+
+			</form>
+			</div>
+		    <div class="col-md-1"></div>
+			<div class="col-md-5" id="box-modified-1">
+                				<h3 class="dark-grey">Preview form</h3>
+				<div class="form-group col-lg-12">
+					<label>Username: </label> <span id="uname"></span>
+				</div>
+
+                <div class="form-group col-lg-12">
+					<label>Email Address: </label> <span id="uemail"></span>
+				</div>
+
+                <div class="form-group col-lg-12">
+					<label>Date: </label> <span id="fname"></span>
+				</div>
+
+                <div class="form-group col-lg-12">
+					<label>Phone Number: </label> <span id="lname"></span>
+				</div>
+
+
+				<div class="form-group col-sm-12">
+				    Terms & Condition Apply <span id="news"></span>
+				</div>
+
+			</div>
+		</div>
+	</section>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="assets/bootstrap/js/script.js"></script>
+
+</body>
+</html>

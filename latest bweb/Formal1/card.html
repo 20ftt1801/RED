@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <ul class="navigation">
+      <li><a href="Home.html">Home</a></li>
+    </ul>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+
+function validateForm() {
+  var x = document.forms["myForm"]["Agenda"]["Date"]["Venue"]["Times"].value;
+  if (x == "") {
+    alert("Date, Venue, Times and Agenda must be filled out");
+    return false;
+  }
+}
+function download(text, name, type) {
+  var a = document.getElementById("a");
+  var file = new Blob([text], {type: type});
+  a.href = URL.createObjectURL(file);
+  a.download = name;
+}
+function saveEdits() {
+
+//get the editable element
+var editElem = document.getElementById("edit");
+
+//get the edited element content
+var userVersion = editElem.innerHTML;
+
+//save the content to local storage
+localStorage.userEdits = userVersion;
+
+//write a confirmation to the user
+document.getElementById("update").innerHTML="Edits saved!";}
+function checkEdits() {
+
+//find out if the user has previously saved edits
+if(localStorage.userEdits!=null)
+document.getElementById("edit").innerHTML = localStorage.userEdits;
+}
+</script>
+<style>
+.navigation{ display: flex;
+    list-style: none;
+     margin: 0;
+    background: dark salmon;
+  }
+  .navigation a{
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    color: Black;
+    font-weight: bold;
+  }
+.card {
+  background-image: url('template.jpg') ;
+  color: Blue;
+  font-size: 20px;
+  border: 1px solid #000000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 270px;
+  padding: 50px;
+  text-align: center;
+}
+body {
+  background-image: url('OIP.jpg');}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 200px 200px;
+}
+</style>
+</head>
+<body >
+<div class="card">
+<img src="Marry couple.jpg" alt="Avatar" style="width:100%">
+<form name="myForm" action="file:///C:/Users/MSI/Desktop/Student/website/card2.html" onsubmit="return validateForm()" method="post">
+  <p contenteditable>You have been invited to an marriage ceremony</p>
+<p contenteditable>Date: </p>
+<p contenteditable>Venue:</p>
+<p contenteditable>Times:</p>
+<p contenteditable>Agenda: </p>
+<input type="button" value="Submit" onclick="saveEdits()"/>
+<a href="" id="a"></a>
+</body>
+</html>

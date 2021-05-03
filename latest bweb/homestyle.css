@@ -1,0 +1,83 @@
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: salmon ;
+
+}
+.navbar{
+  height: 12%;
+  display: flex;
+  align-items: center;
+
+}
+.menu-icon {
+  width: 50px;
+  cursor: pointer;
+  margin-left: 40px;
+}
+nav ul li{
+  list-style:none;
+  display: inline-block;
+  margin-left: 60px;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+  font-size: 13px;
+
+}
+
+nav{
+  flex: 2;
+  text-align: right;
+}
+
+.row{
+  display: flex;
+  height: 90%;
+  align-items: center;
+}
+
+.col{
+  flex-basis: 50%;
+}
+
+h1{
+  color: #fff;
+  font-size: 100px;
+}
+
+p{
+  color: #fff;
+  font-size: 15px;
+  line-height: 10px;
+}
+.card {
+  width: 150px;
+  height: 200px;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: 10px 15px
+}
+
+.card1{
+  background-image: url(assets/c1.jpg);
+}
+.card2{
+ background-image: url(assets/c2.jpg)  ;
+}
+.card3{
+  background-image: url(assets/f2.jpg);
+}
+.card4{
+  background-image: url(assets/f1.jpg);
+}
+.card5{
+  background-image: url(assets/if1.jpg);
+}
+.card6{
+  background-image: url(assets/if2.jpg);
+}

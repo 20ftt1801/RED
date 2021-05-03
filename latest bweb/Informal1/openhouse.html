@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Open House invitation card</title>
+
+<style media="screen">
+  body {
+    background: salmon;
+  }
+  .card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  top: 30%;
+  width: 20px;
+  height: 40px;
+  }
+  .date {
+  position: absolute;
+  font-style: normal;
+  font-family: sans-serif;
+  top: 27%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  }
+
+  .address {
+  position: absolute;
+  font-style: normal;
+  font-family: sans-serif;
+  top: 39%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  }
+
+  .text {
+    position: absolute;
+    top: 18%;
+    left: 8%;
+  }
+
+  .navigation{ display: flex;
+    list-style: none;
+     margin: 0;
+    background: dark salmon;
+  }
+  .navigation a{
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: bold;
+  }
+
+  .save {
+    position: absolute;
+    top: 87%;
+    left: 65%;
+
+  }
+</style>
+  </head>
+  <body>
+    <div class="card">
+      <img src="open1.png" alt=""  width="450" height="600" position="center">
+      <h2 class="date" contenteditable="true">date</h2>
+      <h2 class="address" contenteditable="true">address</h2>
+
+    </div>
+<div class="text">
+  <h1>Informal Template</h1>
+  <h3>You can edit the date and the address by clicking on it</h3>
+</div>
+
+<ul class="navigation">
+    <li><a href="home.html">Home</a></li>
+  </ul>
+
+  <div class="save">
+    <button>Save</button>
+  </div>
+
+
+  </body>
+</html>

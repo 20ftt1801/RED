@@ -1,0 +1,48 @@
+body{
+  background: #fece0c;
+}
+
+.navigation{ display: flex;
+    list-style: none;
+     margin: 0;
+    background: dark salmon;
+  }
+  .navigation a{
+    padding: 1em;
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-weight: bold;
+  }
+
+span{
+    color:red;
+}
+input[type=file] {
+    height: 40%;
+}
+.Workshopimage{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+.dark-grey{
+    text-align: center;
+    font-style: italic;
+    font-weight: bold;
+    font-family: monospace;
+    text-transform: uppercase;
+}
+#box-modified{
+    border:2px solid #bdc3c7;
+    background-color:#ecf0f1;
+}
+#box-modified-1{
+    border:2px solid #bdc3c7;
+    background-color:#ecf0f1;
+    margin-top: 3%;
+}
+section{
+    margin-top: 10%;
+}
